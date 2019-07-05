@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* CSS Document */
+.slideBox{ width:1000px; height:320px; overflow:hidden; position:relative;    } 
+.slideBox .hd{ height:20px; overflow:hidden; position:absolute; right:10px; bottom:10px; z-index:1; } 
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  } 
+.slideBox .hd ul li{ float:left; margin-right:5px;  width:20px; height:20px; line-height:20px; text-align:center; background:#ccc; cursor:pointer; color:#fff; } 
+.slideBox .hd ul li.on{ background:#666; color:#fff; } 
+.slideBox .bd{ position:relative; height:100%; z-index:0;   } 
+.slideBox .bd img{ width:1000px; height:320px; } 
+

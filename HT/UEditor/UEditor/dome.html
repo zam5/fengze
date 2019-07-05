@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="Generator" content="EditPlus®">
+ <meta name="Author" content="">
+ <meta name="Keywords" content="">
+ <meta name="Description" content="">
+ <title>设备档案</title>
+ </head>
+ <body>
+<form method="post" action="s.php" name="search" />
+<input name="search" type="text" value="" size="15" /> 
+<input type="submit" value="Search" />
+</form>
+<br/>
+<hr/>
+添加设备
+<div>
+ <form action="sb_add.php" method="post">
+设备名称：<input type="text" name="sb_name" /><br/>
+编码型号：<input type="text" name="sb_numandtype" /><br/>
+生产厂家：<input type="text" name="sb_home" /><br/>
+启用日期：<input type="text" name="sb_usedate" /><br/>
+安装位置：<input type="text" name="sb_address" /><br/>
+<!--更新日期：<input type="text" name="sb_updatetime" /><br/>-->
+<!--
+<input type="text" name="sb_remarks" />
+-->
+<!-- 加载编辑器的容器 -->
+<!-- 以下脚本中增加文本为初始化内容 -->
+  <script id="container" name="sb_remarks" type="text/plain" style="width:600px;height:200px;">
+<p>
+  <strong><span style="font-size: 14px;">备注：</span></strong>
+</p>
+<p>
+  <br/>
+</p>  
+  </script>
+  <!-- 配置文件 -->
+  <script type="text/javascript" src="./ueditor/ueditor.config.js"></script>
+  <!-- 编辑器源码文件 -->
+  <script type="text/javascript" src="./ueditor/ueditor.all.js"></script>
+  <!-- 实例化编辑器 -->
+  <script type="text/javascript">
+    var ue = UE.getEditor('container');
+  </script>
+<br/>
+<br/>
+<input type="submit" value="添加" />
+</form>
+</div>
+ </body>
+</html>
